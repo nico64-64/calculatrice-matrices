@@ -5,11 +5,11 @@ Une calculatrice de matrices de base pour le Terminal.
 Programmée en C par Nicolas Audette.
 
 ## Installation
-Compilez le programme avec la commande `gcc calc-mat.c -o calc-mat -lm`.
+Vous pouvez utiliser les binaires de la release 1.0 ou construire vous-même le programme.
 
-Démarrez le programme depuis un terminal avec `./calc-mat`.
+Pour construire le programme, compilez-le (sur Linux) avec la commande `gcc calc-mat.c -o calc-mat -lm`.
 
-Ce programme se compile aussi facilement pour Windows, puisque stdio.h, string.h et math.h sont les seules "dépendances" du programme.
+Démarrez le programme depuis un terminal avec `./calc-mat` (ou `calc-mat.exe` sur Windows).
 
 ## Utilisation
 Une fois le programme démarré, entrez la commande `aide` pour afficher la liste des commandes acceptées.
@@ -26,3 +26,7 @@ Les opérations suivantes sont supportées:
 - Inversion
 - Transposition
 - Déterminant
+
+## Version Windows
+Vous devez spécifier à votre terminal d'utiliser la page de code 65001 (unicode/UTF-8) pour que le texte s'affiche correctement.
+Entrez `chcp 65001` avant de démarrer le programme.
